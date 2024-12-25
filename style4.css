@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin :0;
+    padding : 0;
+    box-sizing : border-box;
+    scroll-behavior: smooth;
+
+}
+
+/* style of header */
+header{
+height: 100vh;  
+background:url("ontro.jpg") center center/cover no-repeat;
+position:relative;
+}
+header::before{
+content:"";
+position:absolute;
+background:rgb(0,0,0,0.7);
+height:100%;
+width:100%;
+top:0;
+left:0;
+}
+header *{
+    z-index:10;
+}
+.header .contain{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    
+    
+}
+.header .logo{
+    display:flex;
+    height:80px;
+    width:80px;
+    margin-top:10px;
+border-radius:50%;
+margin-left:100px;
+    
+}
+.header .navigation ul{
+    list-style:none;
+    display:flex;
+  margin-right:100px;
+  
+}
+.header .navigation a{
+    text-decoration:none;
+    color:coral;
+}
+.header .navigation a:hover{
+    color:brown;
+}
+.header .navigation ul li a{
+padding-right:50px;
+}
+.header .navigation li{
+    transition: 0.7s;
+   
+}
+.header .navigation li:hover{
+    transform:scale(1.1);
+}
+
+/* end header */
+
+/* style first sevtion */
+
+.header .content{
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+   justify-content:center;
+   height:75%;
+   line-height:40px;
+   /* background-image: url("ontro.jpg"); */
+}
+
+.header .content .hea{
+    font-size:35px;
+    text-transform:capitalize;
+    color:antiquewhite;
+}
+.header .content .hea .text{
+    color:coral;
+}
+.header .content .pra{
+    font-size:15px;
+    letter-spacing:1px;
+    color:antiquewhite;
+    text-transform:capitalize;
+}
+.header .content .btn{
+    background-color:coral;
+    border:1px solid coral;
+    border-radius:20px;
+    height: 55px;
+    width:110px;
+    color:antiquewhite;
+    font-size:15px;
+    font-weight:550;
+    text-transform:capitalize;
+    transition:0.7s;
+    cursor:pointer;
+}
+.header .content .btn:hover{
+    transform:scale(1.1);
+    background-color:brown;
+}
+
+/* style of start section*/
+ section .contain{
+    background-color:antiquewhite;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    height:87vh;
+   
+}
+.contain .title{
+    padding:30px;
+    margin-bottom:30px;
+}
+.contain .title .head{
+    font-size:45px;
+    font-weight:700px;
+    text-transform:capitalize;
+    letter-spacing:1px;
+
+
+}
+.contain .title .sub{
+    color:rgb(45, 35, 21);
+    line-height:15px;
+}
+
+.contain .description{
+    display:flex;
+    justify-content:space-between;
+    
+}
+.contain .pho{
+
+    
+}
+.contain img{
+    height:30%;
+    width:30%;
+   padding:7px;
+   border-radius:15px;
+   transition:0.7s;
+   
+}
+.contain img:hover{
+    transform:scale(1.1);
+}
+.contain .pragraph .pag{
+    font-size:20px;
+    color:rgb(67, 51, 32);
+    padding-bottom:30px;
+    padding-left:10px;
+}
+
+.contain .learn{
+
+    font-size:26px;
+    background-color: coral;
+    border-radius:5px;
+    transition:0.7s;
+}
+.contain .learn:hover{
+transform:scale(1.1);
+background-color: rgb(164, 149, 144);
+}
+.contain .description a{
+    text-decoration:none;
+}
+
+/* end start section */
+
+
+/* style of second section */
+
+.offers{
+    background-color:burlywood;
+    height:100%;
+    width:100%;
+    
+    
+}
+.offers .container{
+    height:80%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+}
+.offers .container .head{
+    padding-top:30px;
+    font-size:45px;
+    font-weight:700px;
+    text-transform:capitalize;
+    letter-spacing:1px;
+}
+.offers .container .pag{
+    color:rgb(45, 35, 21);
+    line-height:25px;
+    font-weight:600px;
+
+}
+.offers .container .card-container{
+    height:60%;
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+justify-content:center;
+align-items:center;
+
+}
+
+.offers .container .card{
+    margin-right:30px;
+display:flex;
+flex-direction:column;
+align-items:center;
+width:300px;
+}
+.offers .container .card img{
+    height:150px;
+    width:150px;
+    border-radius:50%;
+    margin-top:30px;
+
+}
+.offers .container .card .head{
+    font-size:30px;
+    padding-bottom:20px;
+
+}
+.offers .container .card .parg{
+    font-size:20px;
+    color:rgb(54, 28, 10);
+}
+.offers .container .card .sp1{
+    text-decoration:line-through;
+}
+.offers .container .card .sp2{
+    color:chocolate;
+    text-decoration:none;
+}
+/* end second section  */
+
+/* start third section */
+.gallery{
+    background-color: rgb(40, 38, 38);
+    display :flex;
+    flex-direction:column;
+    align-items:center;
+}
+.gallery h1{
+    font-size:50px;
+    font-weight:700px;
+    color:aliceblue;
+    padding:30px;
+}
+ .gallery .photos {
+display:flex;
+justify-content:center;
+align-items:center;
+flex-wrap:wrap;
+
+}
+.gallery .photos img{
+    height:350px;
+    width:350px;
+    padding:20px;
+}
+
+/* end third section */
+
+/* style of fourth section */
+.contact{
+    height:90vh;
+}
+.contact .container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:30px;
+    margin:30px;
+}
+.contact .container .na{
+ font-size:30px;
+ font-weight:600px;
+ text-transform:uppercase;
+ margin-top:20px;
+ margin-bottom:20px;
+}
+.contact .container input{
+    width:400px;
+    height:40px;
+    border-radius:10px;
+
+}
+
+.contact .container button{
+    font-size:26px;
+    margin-top:20px;
+    border:1px solid black;
+    border-radius:10px;
+    padding:7px;
+    cursor:pointer;
+    transition:0.7s;
+}
+.contact .container button:hover{
+    transform:scale(1.1);
+    background-color:rgb(180, 194, 206)
+}
+
+/* end style of fourth section */
